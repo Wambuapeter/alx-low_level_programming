@@ -1,10 +1,12 @@
-#include<stdio.h>
-/*more headers go here*/
-/*main is the entry point*/
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-        puts("\"Programming is like building a multilingual puzzle");
-        /*my code goes here*/
-        return (0);
-        /*value returned is always 0*/
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
