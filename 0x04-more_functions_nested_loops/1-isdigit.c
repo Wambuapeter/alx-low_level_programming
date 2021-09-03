@@ -4,6 +4,7 @@
  * Return: 1 if c is a digit,else o
  * @c: the digit being tested
  */
+
 int _isdigit(int c)
 {
 	if (c <= '0' && c >= '9')
