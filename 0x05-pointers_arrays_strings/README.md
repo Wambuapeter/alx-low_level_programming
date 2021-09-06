@@ -1,0 +1,1 @@
+This directory is about pointers and arrays in c.They are fun
