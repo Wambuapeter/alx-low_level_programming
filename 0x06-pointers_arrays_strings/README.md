@@ -1,0 +1,1 @@
+We still try more pointers and arrays to be great c programmers
