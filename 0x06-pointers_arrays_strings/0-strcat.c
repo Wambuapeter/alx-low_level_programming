@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - appends src string to dest string
+ * _strcat - appends src string to dest string
  * and overwrites the terminating null byte (\0) at the end of dest
  * @dest: the first string
  * @src: second string
@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
 	{
 		length++;
 	}
-	while (src[length] != '\0')
+	while (src[j] != '\0')
 	{
 		dest[length] = dest[j];
 		j++;
