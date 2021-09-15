@@ -4,7 +4,7 @@
  * @s: s
  * @inicio: inicio
  * @fin: fin
- * Return: zero
+ * Return: 1 if a string is a palindrome and 0 if not
  */
 int palindro(char *s, int inicio, int fin)
 {
@@ -22,7 +22,7 @@ int palindro(char *s, int inicio, int fin)
 /**
  * _strlen - check for palindrome words
  * @s: s
- * Return: zero
+ * Return: 1 if a string is a palindrome and 0 if not
  */
 int _strlen(char *s)
 {
