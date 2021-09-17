@@ -1,0 +1,1 @@
+It's so cool to learn argc and argv.How they work is just amazing!
