@@ -6,7 +6,7 @@
  * @argc: no of command line arguments
  * @argv: array of size argc
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", *argv);
 
