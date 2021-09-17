@@ -6,9 +6,8 @@
  * @argv: array of size argc
  * Return: always zero(success)
  */
-int main(int argc, char *argv[] _attribute_((unused)))
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc);
-	printf("\n");
+	printf("%d\n", argc - 1);
 	return (0);
 }
