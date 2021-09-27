@@ -1,0 +1,1 @@
+Let's now learn about struct and typedef.Let's goo!
