@@ -7,5 +7,12 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	printf("The name is %s\n", name);
+	if (f == NULL)
+	{
+		return;
+	}
+	else
+	{
+		(*f) (char *);
+	}
 }
