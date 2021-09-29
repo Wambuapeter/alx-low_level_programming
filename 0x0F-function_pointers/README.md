@@ -1,0 +1,1 @@
+Function poiinters are an amazing part of C programming.Let's dive into them 
