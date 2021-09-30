@@ -1,41 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
- * main - prints its own opcodes
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: Always 0 (Success)
+ * int_index - search for integer.
+ * @array: array
+ * @size: size
+ * @cmp: cmp
+ * Return: nothing.
  */
-int main(int argc, char *argv[])
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	int bytes, i;
-	char *arr;
+	int i;
 
-	if (argc != 2)
+	if (cmp == NULL)
 	{
-		printf("Error\n");
-		exit(1);
+		return (-1);
 	}
-
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
+	if (array == NULL)
 	{
-		printf("Error\n");
-		exit(2);
+		return (-1);
 	}
-
-	arr = (char *)main;
-
-	for (i = 0; i < bytes; i++)
+	if (size <= 0)
 	{
-		if (i == bytes - 1)
+		return (-1);
+	}
+	for (i = 0; i < size; i++)
+	{
+		if (cmp(array[i]))
 		{
-			printf("%02hhx\n", arr[i]);
-			break;
+			return (i);
 		}
-		printf("%02hhx ", arr[i]);
 	}
-	return (0);
+	return (-1);
 }
