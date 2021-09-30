@@ -7,28 +7,20 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list(ap);
-
-	int i;
+	unsigned int i;
 	char *s;
 
+	va_list(ap);
 	va_start(ap, n);
-	if (n == 0)
-	{
-		printf("(nil)");
-		return;
-	}
 	for (i = 0; i < n; i++)
 	{
 		s = va_arg(ap, char *);
-		if (separator == NULL)
-		{
-			printf("\n");
-		}
+		if (s == NULL)
+			printf("(nil)");
 		else
-		{
-		printf("%s%s", s, separator);
-		}
+			printf("%s", s);
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
 		printf("\n");
 		va_end(ap);
 	}
