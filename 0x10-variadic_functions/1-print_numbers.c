@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-#include <stdlib.h>
 /**
  * print_numbers - prints numbers
  * @separator: string printed bbtn nos
@@ -31,4 +30,3 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	printf("%d\n", va_arg(ap, int));
 	va_end(ap);
 }
-
