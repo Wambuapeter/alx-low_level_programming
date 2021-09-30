@@ -1,0 +1,1 @@
+I've learnt about variadic functions today.We can actually write functions that accept indefinite number of arguments,LOL!
