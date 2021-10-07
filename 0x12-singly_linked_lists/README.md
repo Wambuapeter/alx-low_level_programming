@@ -1,0 +1,1 @@
+Let's see how we can use linked lists.Of course they might be convinient to use than arrays for some functionalities.
