@@ -2,13 +2,13 @@
 /**
  * add_nodeint_end - adds a new node at the end of a list
  * @head: the first element
- * @n: no. of
+ * @n: element to insert
  * Return: address of the new element
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new;
-	listint_t *temp1 = *head;
+	listint_t *temp = *head;
 
 	new = malloc(sizeof(listint_t));
 	if (!new)
@@ -21,9 +21,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new;
 		return (new);
 	}
-	while (temp1->next)
-		temp1 = temp1->next;
-	temp1->next = new;
+	while (temp->next)
+		temp = temp->next;
+	temp->next = new;
 
 	return (new);
 }
