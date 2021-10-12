@@ -1,0 +1,1 @@
+We did linked lists and it was amazing in doing some magical functionalities.Let's dive into more of the linked lists
